@@ -1,37 +1,9 @@
 import times from 'lodash/times'
 
 /**
- * The return value of `sizeScale()`, an object representing your
- * generated CSS scale.
+ * A series of CSS values that are equidistant from each other.
  */
-export type Scale = Record<number, string>
-
-/**
- * Additional options that may be passed to `sizeScale()`.
- */
-export type ScaleOptions = {
-  /**
-   * The amount of units that each interval will increase by.
-   *
-   * @default 4
-   */
-  step?: number
-
-  /**
-   * CSS unit used by the scale.
-   *
-   * @default "px"
-   */
-  unit?: string
-
-  /**
-   * An optional prefix that you can add to scale keys. Instead of each
-   * key being just a number, you can use a prefix to add
-   * differentiating names to each scale position, such as "box0" or
-   * "space3".
-   */
-  prefix?: string
-}
+export type Scale = { [step: number]: string }
 
 /**
  * Generate a size scale of CSS values. Defaults to 4px increments.
@@ -45,5 +17,10 @@ export const sizeScale = (
   step = 4,
   unit = 'px'
 ): Record<number, string> => ({
-  ...times(positions, (position) => `${Math.ceil(position * step)}${unit}`),
+  ...times(positions, (position) => {
+    const calculation = position * step
+    const value = Math.ceil(calculation * 10) / 10
+
+    return [value, unit].join('')
+  }),
 })
