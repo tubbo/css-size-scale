@@ -39,7 +39,7 @@
       "eslint --fix"
     ],
     "*.{json,yaml,yml}": [
-      "eslint --fix"
+      "prettier --write"
     ]
   },
   "release": {
@@ -65,7 +65,11 @@
       [
         "@semantic-release/git",
         {
-          "assets": ["dist", "CHANGELOG.md", "package.json"]
+          "assets": [
+            "dist",
+            "CHANGELOG.md",
+            "package.json"
+          ]
         }
       ],
       "@semantic-release/github"
