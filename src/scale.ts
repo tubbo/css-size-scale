@@ -47,4 +47,3 @@ export const sizeScale = (
 ): Record<number, string> => ({
   ...times(positions, (position) => `${Math.ceil(position * step)}${unit}`),
 })
-
