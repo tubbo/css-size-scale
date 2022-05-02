@@ -37,6 +37,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@commitlint/config-conventional", "npm:16.2.4"],\
             ["@commitlint/types", "npm:16.2.1"],\
             ["@semantic-release/changelog", "virtual:248ac87d0863dc38b8c1203654b48fae2dad2599cd421ecdf0ac8e4575bb0a313e3cb9ab4aa7d461e4314f791b64b94f7c89721f6c0b610d78ad1cf040c840a8#npm:6.0.1"],\
+            ["@semantic-release/git", "virtual:248ac87d0863dc38b8c1203654b48fae2dad2599cd421ecdf0ac8e4575bb0a313e3cb9ab4aa7d461e4314f791b64b94f7c89721f6c0b610d78ad1cf040c840a8#npm:10.0.1"],\
             ["@swc/cli", "virtual:248ac87d0863dc38b8c1203654b48fae2dad2599cd421ecdf0ac8e4575bb0a313e3cb9ab4aa7d461e4314f791b64b94f7c89721f6c0b610d78ad1cf040c840a8#npm:0.1.57"],\
             ["@swc/core", "npm:1.2.174"],\
             ["@swc/jest", "virtual:248ac87d0863dc38b8c1203654b48fae2dad2599cd421ecdf0ac8e4575bb0a313e3cb9ab4aa7d461e4314f791b64b94f7c89721f6c0b610d78ad1cf040c840a8#npm:0.2.20"],\
@@ -1933,6 +1934,36 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@semantic-release-error-npm-3.0.0-238eebf38b-29c4391ecb.zip/node_modules/@semantic-release/error/",\
           "packageDependencies": [\
             ["@semantic-release/error", "npm:3.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@semantic-release/git", [\
+        ["npm:10.0.1", {\
+          "packageLocation": "./.yarn/cache/@semantic-release-git-npm-10.0.1-2fa2e024e6-b0a346acaf.zip/node_modules/@semantic-release/git/",\
+          "packageDependencies": [\
+            ["@semantic-release/git", "npm:10.0.1"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:248ac87d0863dc38b8c1203654b48fae2dad2599cd421ecdf0ac8e4575bb0a313e3cb9ab4aa7d461e4314f791b64b94f7c89721f6c0b610d78ad1cf040c840a8#npm:10.0.1", {\
+          "packageLocation": "./.yarn/__virtual__/@semantic-release-git-virtual-0d99b08da2/0/cache/@semantic-release-git-npm-10.0.1-2fa2e024e6-b0a346acaf.zip/node_modules/@semantic-release/git/",\
+          "packageDependencies": [\
+            ["@semantic-release/git", "virtual:248ac87d0863dc38b8c1203654b48fae2dad2599cd421ecdf0ac8e4575bb0a313e3cb9ab4aa7d461e4314f791b64b94f7c89721f6c0b610d78ad1cf040c840a8#npm:10.0.1"],\
+            ["@semantic-release/error", "npm:3.0.0"],\
+            ["@types/semantic-release", null],\
+            ["aggregate-error", "npm:3.1.0"],\
+            ["debug", "virtual:d379f4b8bd5b10788d613996438ba1503c2ba18b925a21790a5a40942cd657dcf572a88a0a980313130bf3c5fa6d6ff2704cf7a8b4862f4830e1837c28f320c9#npm:4.3.4"],\
+            ["dir-glob", "npm:3.0.1"],\
+            ["execa", "npm:5.1.1"],\
+            ["lodash", "npm:4.17.21"],\
+            ["micromatch", "npm:4.0.5"],\
+            ["p-reduce", "npm:2.1.0"],\
+            ["semantic-release", "npm:19.0.2"]\
+          ],\
+          "packagePeers": [\
+            "@types/semantic-release",\
+            "semantic-release"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3840,6 +3871,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@commitlint/config-conventional", "npm:16.2.4"],\
             ["@commitlint/types", "npm:16.2.1"],\
             ["@semantic-release/changelog", "virtual:248ac87d0863dc38b8c1203654b48fae2dad2599cd421ecdf0ac8e4575bb0a313e3cb9ab4aa7d461e4314f791b64b94f7c89721f6c0b610d78ad1cf040c840a8#npm:6.0.1"],\
+            ["@semantic-release/git", "virtual:248ac87d0863dc38b8c1203654b48fae2dad2599cd421ecdf0ac8e4575bb0a313e3cb9ab4aa7d461e4314f791b64b94f7c89721f6c0b610d78ad1cf040c840a8#npm:10.0.1"],\
             ["@swc/cli", "virtual:248ac87d0863dc38b8c1203654b48fae2dad2599cd421ecdf0ac8e4575bb0a313e3cb9ab4aa7d461e4314f791b64b94f7c89721f6c0b610d78ad1cf040c840a8#npm:0.1.57"],\
             ["@swc/core", "npm:1.2.174"],\
             ["@swc/jest", "virtual:248ac87d0863dc38b8c1203654b48fae2dad2599cd421ecdf0ac8e4575bb0a313e3cb9ab4aa7d461e4314f791b64b94f7c89721f6c0b610d78ad1cf040c840a8#npm:0.2.20"],\

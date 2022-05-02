@@ -14,7 +14,8 @@
     "types": "tsc --noEmit",
     "test": "jest",
     "build": "swc src -d dist",
-    "fmt": "prettier --write . && eslint --fix ."
+    "fmt": "prettier --write . && eslint --fix .",
+    "release": "semantic-release"
   },
   "eslintConfig": {
     "plugins": [
@@ -41,11 +42,41 @@
       "eslint --fix"
     ]
   },
+  "release": {
+    "branches": [
+      "+([0-9])?(.{+([0-9]),x}).x",
+      "master",
+      "next",
+      "next-major",
+      {
+        "name": "beta",
+        "prerelease": true
+      },
+      {
+        "name": "alpha",
+        "prerelease": true
+      }
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      [
+        "@semantic-release/git",
+        {
+          "assets": ["dist", "CHANGELOG.md", "package.json"]
+        }
+      ],
+      "@semantic-release/github"
+    ]
+  },
   "devDependencies": {
     "@commitlint/cli": "^16.2.4",
     "@commitlint/config-conventional": "^16.2.4",
     "@commitlint/types": "^16.2.1",
     "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
     "@swc/cli": "^0.1.57",
     "@swc/core": "^1.2.174",
     "@swc/jest": "^0.2.20",
