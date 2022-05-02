@@ -19,7 +19,8 @@
     "build": "tsc",
     "fmt": "prettier --write . && eslint --fix .",
     "release": "semantic-release",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "docs": "typedoc src/index.ts"
   },
   "eslintConfig": {
     "plugins": [
@@ -75,6 +76,7 @@
         "@semantic-release/git",
         {
           "assets": [
+            "docs",
             "CHANGELOG.md",
             "package.json"
           ]
@@ -104,6 +106,7 @@
     "@swc/core": "^1.2.174",
     "@swc/jest": "^0.2.20",
     "@types/eslint": "^8",
+    "@types/lodash": "^4",
     "@types/prettier": "^2",
     "@typescript-eslint/eslint-plugin": "^5.21.0",
     "@typescript-eslint/parser": "^5.21.0",
@@ -115,6 +118,10 @@
     "lint-staged": "^12.4.1",
     "prettier": "^2.6.2",
     "semantic-release": "^19.0.2",
+    "typedoc": "^0.22.15",
     "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }

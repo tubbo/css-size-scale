@@ -25,3 +25,5 @@ You'll get an 8-position scale, each position being 4 pixels apart:
   7: '32px',
 }
 ```
+
+Full documentation available at https://tubbo.github.io/css-size-scale
