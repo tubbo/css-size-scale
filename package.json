@@ -19,7 +19,7 @@
     "build": "tsc",
     "fmt": "prettier --write . && eslint --fix .",
     "release": "semantic-release",
-    "clean": "rm -rf dist",
+    "clean": "rm -rf dist coverage",
     "docs": "typedoc src/index.ts"
   },
   "eslintConfig": {
@@ -95,7 +95,11 @@
   "jest": {
     "transform": {
       "^.+\\.(t|j)sx?$": "@swc/jest"
-    }
+    },
+    "testPathIgnorePatterns": [
+      "dist",
+      ".yarn/unplugged"
+    ]
   },
   "commitlint": {
     "extends": [

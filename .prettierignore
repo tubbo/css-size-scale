@@ -2,3 +2,4 @@
 .pnp*
 dist
 CHANGELOG.md
+coverage
