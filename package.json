@@ -7,15 +7,19 @@
   "author": "Tom Scott <tubbo@psychedeli.ca>",
   "license": "MIT",
   "packageManager": "yarn@3.2.0",
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
     "prepare": "husky install",
     "check": "prettier --check .",
     "lint": "eslint .",
     "types": "tsc --noEmit",
     "test": "jest",
-    "build": "swc src -d dist",
+    "build": "tsc",
     "fmt": "prettier --write . && eslint --fix .",
-    "release": "semantic-release"
+    "release": "semantic-release",
+    "clean": "rm -rf dist"
   },
   "eslintConfig": {
     "plugins": [
@@ -61,19 +65,35 @@
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
       "@semantic-release/changelog",
-      "@semantic-release/npm",
+      [
+        "@semantic-release/npm",
+        {
+          "tarballDir": "pkg"
+        }
+      ],
       [
         "@semantic-release/git",
         {
           "assets": [
-            "dist",
             "CHANGELOG.md",
             "package.json"
           ]
         }
       ],
-      "@semantic-release/github"
+      [
+        "@semantic-release/github",
+        {
+          "assets": [
+            "pkg/*.tgz"
+          ]
+        }
+      ]
     ]
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.(t|j)sx?$": "@swc/jest"
+    }
   },
   "devDependencies": {
     "@commitlint/cli": "^16.2.4",
@@ -81,7 +101,6 @@
     "@commitlint/types": "^16.2.1",
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/git": "^10.0.1",
-    "@swc/cli": "^0.1.57",
     "@swc/core": "^1.2.174",
     "@swc/jest": "^0.2.20",
     "@types/eslint": "^8",

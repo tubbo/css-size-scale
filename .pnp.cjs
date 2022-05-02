@@ -38,7 +38,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@commitlint/types", "npm:16.2.1"],\
             ["@semantic-release/changelog", "virtual:248ac87d0863dc38b8c1203654b48fae2dad2599cd421ecdf0ac8e4575bb0a313e3cb9ab4aa7d461e4314f791b64b94f7c89721f6c0b610d78ad1cf040c840a8#npm:6.0.1"],\
             ["@semantic-release/git", "virtual:248ac87d0863dc38b8c1203654b48fae2dad2599cd421ecdf0ac8e4575bb0a313e3cb9ab4aa7d461e4314f791b64b94f7c89721f6c0b610d78ad1cf040c840a8#npm:10.0.1"],\
-            ["@swc/cli", "virtual:248ac87d0863dc38b8c1203654b48fae2dad2599cd421ecdf0ac8e4575bb0a313e3cb9ab4aa7d461e4314f791b64b94f7c89721f6c0b610d78ad1cf040c840a8#npm:0.1.57"],\
             ["@swc/core", "npm:1.2.174"],\
             ["@swc/jest", "virtual:248ac87d0863dc38b8c1203654b48fae2dad2599cd421ecdf0ac8e4575bb0a313e3cb9ab4aa7d461e4314f791b64b94f7c89721f6c0b610d78ad1cf040c840a8#npm:0.2.20"],\
             ["@types/eslint", "npm:8.4.1"],\
@@ -2102,36 +2101,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["@swc/cli", [\
-        ["npm:0.1.57", {\
-          "packageLocation": "./.yarn/cache/@swc-cli-npm-0.1.57-161586148e-d19f02233f.zip/node_modules/@swc/cli/",\
-          "packageDependencies": [\
-            ["@swc/cli", "npm:0.1.57"]\
-          ],\
-          "linkType": "SOFT"\
-        }],\
-        ["virtual:248ac87d0863dc38b8c1203654b48fae2dad2599cd421ecdf0ac8e4575bb0a313e3cb9ab4aa7d461e4314f791b64b94f7c89721f6c0b610d78ad1cf040c840a8#npm:0.1.57", {\
-          "packageLocation": "./.yarn/__virtual__/@swc-cli-virtual-4974f2e304/0/cache/@swc-cli-npm-0.1.57-161586148e-d19f02233f.zip/node_modules/@swc/cli/",\
-          "packageDependencies": [\
-            ["@swc/cli", "virtual:248ac87d0863dc38b8c1203654b48fae2dad2599cd421ecdf0ac8e4575bb0a313e3cb9ab4aa7d461e4314f791b64b94f7c89721f6c0b610d78ad1cf040c840a8#npm:0.1.57"],\
-            ["@swc/core", "npm:1.2.174"],\
-            ["@types/chokidar", null],\
-            ["@types/swc__core", null],\
-            ["chokidar", null],\
-            ["commander", "npm:7.2.0"],\
-            ["fast-glob", "npm:3.2.11"],\
-            ["slash", "npm:3.0.0"],\
-            ["source-map", "npm:0.7.3"]\
-          ],\
-          "packagePeers": [\
-            "@swc/core",\
-            "@types/chokidar",\
-            "@types/swc__core",\
-            "chokidar"\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
       ["@swc/core", [\
         ["npm:1.2.174", {\
           "packageLocation": "./.yarn/cache/@swc-core-npm-1.2.174-848d1710ad-7692d527d2.zip/node_modules/@swc/core/",\
@@ -3650,13 +3619,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["commander", [\
-        ["npm:7.2.0", {\
-          "packageLocation": "./.yarn/cache/commander-npm-7.2.0-19178180f8-53501cbeee.zip/node_modules/commander/",\
-          "packageDependencies": [\
-            ["commander", "npm:7.2.0"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["npm:8.3.0", {\
           "packageLocation": "./.yarn/cache/commander-npm-8.3.0-c0d18c66d5-0f82321821.zip/node_modules/commander/",\
           "packageDependencies": [\
@@ -3872,7 +3834,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@commitlint/types", "npm:16.2.1"],\
             ["@semantic-release/changelog", "virtual:248ac87d0863dc38b8c1203654b48fae2dad2599cd421ecdf0ac8e4575bb0a313e3cb9ab4aa7d461e4314f791b64b94f7c89721f6c0b610d78ad1cf040c840a8#npm:6.0.1"],\
             ["@semantic-release/git", "virtual:248ac87d0863dc38b8c1203654b48fae2dad2599cd421ecdf0ac8e4575bb0a313e3cb9ab4aa7d461e4314f791b64b94f7c89721f6c0b610d78ad1cf040c840a8#npm:10.0.1"],\
-            ["@swc/cli", "virtual:248ac87d0863dc38b8c1203654b48fae2dad2599cd421ecdf0ac8e4575bb0a313e3cb9ab4aa7d461e4314f791b64b94f7c89721f6c0b610d78ad1cf040c840a8#npm:0.1.57"],\
             ["@swc/core", "npm:1.2.174"],\
             ["@swc/jest", "virtual:248ac87d0863dc38b8c1203654b48fae2dad2599cd421ecdf0ac8e4575bb0a313e3cb9ab4aa7d461e4314f791b64b94f7c89721f6c0b610d78ad1cf040c840a8#npm:0.2.20"],\
             ["@types/eslint", "npm:8.4.1"],\
@@ -8472,13 +8433,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/source-map-npm-0.6.1-1a3621db16-59ce8640cf.zip/node_modules/source-map/",\
           "packageDependencies": [\
             ["source-map", "npm:0.6.1"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
-        ["npm:0.7.3", {\
-          "packageLocation": "./.yarn/cache/source-map-npm-0.7.3-e3b4f7982a-cd24efb3b8.zip/node_modules/source-map/",\
-          "packageDependencies": [\
-            ["source-map", "npm:0.7.3"]\
           ],\
           "linkType": "HARD"\
         }]\
