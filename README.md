@@ -50,3 +50,13 @@ This would return:
 ```
 
 Full API documentation available at https://tubbo.github.io/css-size-scale
+
+## Development
+
+This project uses Yarn
+[Zero-Installs](https://yarnpkg.com/features/zero-installs) and thus
+requires the Yarn package manager in order to function. The Git
+repository contains all cache entries, so there's no need to run `yarn install` when you clone it. In addition, automatic formatting and commit
+message linting occurs when you commit new changes to the repository.
+Tests and type checks are run in CI, so you should make sure to run
+`yarn test` before making any pull requests.
