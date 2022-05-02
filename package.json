@@ -43,7 +43,7 @@
       "prettier --write",
       "eslint --fix"
     ],
-    "*.{json,yaml,yml}": [
+    "*.{json,yaml,yml,html,htm,css}": [
       "prettier --write"
     ]
   },
@@ -128,5 +128,17 @@
   },
   "dependencies": {
     "lodash": "^4.17.21"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tubbo/css-size-scale.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tubbo/css-size-scale/issues"
+  },
+  "homepage": "https://tubbo.github.io/css-size-scale",
+  "keywords": [
+    "css",
+    "css-in-js"
+  ]
 }
