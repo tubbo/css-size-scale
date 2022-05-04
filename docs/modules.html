@@ -90,11 +90,6 @@
                         >Scale</a
                       >
                     </li>
-                    <li class="tsd-kind-type-alias">
-                      <a href="modules.html#ScaleOptions" class="tsd-kind-icon"
-                        >Scale<wbr />Options</a
-                      >
-                    </li>
                   </ul>
                 </section>
                 <section class="tsd-index-section">
@@ -140,137 +135,36 @@
               </h3>
               <div class="tsd-signature tsd-kind-icon">
                 Scale<span class="tsd-signature-symbol">:</span>
-                <span class="tsd-signature-type">Record</span
-                ><span class="tsd-signature-symbol">&lt;</span
-                ><span class="tsd-signature-type">number</span
-                ><span class="tsd-signature-symbol">, </span
-                ><span class="tsd-signature-type">string</span
-                ><span class="tsd-signature-symbol">&gt;</span>
+                <span class="tsd-signature-symbol">{}</span>
               </div>
               <aside class="tsd-sources">
                 <ul>
-                  <li>Defined in scale.ts:5</li>
+                  <li>
+                    Defined in
+                    <a
+                      href="https://github.com/tubbo/css-size-scale/blob/0b8cae9/src/scale.ts#L6"
+                      >scale.ts:6</a
+                    >
+                  </li>
                 </ul>
               </aside>
               <div class="tsd-comment tsd-typography">
                 <div class="lead">
                   <p>
-                    The return value of <code>sizeScale()</code>, an object
-                    representing your generated CSS scale.
-                  </p>
-                </div>
-              </div>
-            </section>
-            <section class="tsd-panel tsd-member tsd-kind-type-alias">
-              <a id="ScaleOptions" class="tsd-anchor"></a>
-              <h3 class="tsd-anchor-link">
-                Scale<wbr />Options<a
-                  href="#ScaleOptions"
-                  aria-label="Permalink"
-                  class="tsd-anchor-icon"
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="icon icon-tabler icon-tabler-link"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                    stroke="currentColor"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <path
-                      d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
-                    ></path>
-                    <path
-                      d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
-                    ></path></svg
-                ></a>
-              </h3>
-              <div class="tsd-signature tsd-kind-icon">
-                Scale<wbr />Options<span class="tsd-signature-symbol">:</span>
-                <span class="tsd-signature-symbol">{ </span>prefix<span
-                  class="tsd-signature-symbol"
-                  >?: </span
-                ><span class="tsd-signature-type">string</span
-                ><span class="tsd-signature-symbol">; </span>step<span
-                  class="tsd-signature-symbol"
-                  >?: </span
-                ><span class="tsd-signature-type">number</span
-                ><span class="tsd-signature-symbol">; </span>unit<span
-                  class="tsd-signature-symbol"
-                  >?: </span
-                ><span class="tsd-signature-type">string</span
-                ><span class="tsd-signature-symbol"> }</span>
-              </div>
-              <aside class="tsd-sources">
-                <ul>
-                  <li>Defined in scale.ts:10</li>
-                </ul>
-              </aside>
-              <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                  <p>
-                    Additional options that may be passed to
-                    <code>sizeScale()</code>.
+                    A series of CSS values that are equidistant from each other.
                   </p>
                 </div>
               </div>
               <div class="tsd-type-declaration">
                 <h4>Type declaration</h4>
                 <ul class="tsd-parameters">
-                  <li class="tsd-parameter">
+                  <li class="tsd-parameter-index-signature">
                     <h5>
-                      <span class="tsd-flag ts-flagOptional">Optional</span>
-                      prefix<span class="tsd-signature-symbol">?: </span
+                      <span class="tsd-signature-symbol">[</span>step:
+                      <span class="tsd-signature-type">number</span
+                      ><span class="tsd-signature-symbol">]: </span
                       ><span class="tsd-signature-type">string</span>
                     </h5>
-                    <div class="tsd-comment tsd-typography">
-                      <div class="lead">
-                        <p>
-                          An optional prefix that you can add to scale keys.
-                          Instead of each key being just a number, you can use a
-                          prefix to add differentiating names to each scale
-                          position, such as &quot;box0&quot; or
-                          &quot;space3&quot;.
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="tsd-parameter">
-                    <h5>
-                      <span class="tsd-flag ts-flagOptional">Optional</span>
-                      step<span class="tsd-signature-symbol">?: </span
-                      ><span class="tsd-signature-type">number</span>
-                    </h5>
-                    <div class="tsd-comment tsd-typography">
-                      <div class="lead">
-                        <p>
-                          The amount of units that each interval will increase
-                          by.
-                        </p>
-                      </div>
-                      <dl class="tsd-comment-tags">
-                        <dt>default</dt>
-                        <dd><p>4</p></dd>
-                      </dl>
-                    </div>
-                  </li>
-                  <li class="tsd-parameter">
-                    <h5>
-                      <span class="tsd-flag ts-flagOptional">Optional</span>
-                      unit<span class="tsd-signature-symbol">?: </span
-                      ><span class="tsd-signature-type">string</span>
-                    </h5>
-                    <div class="tsd-comment tsd-typography">
-                      <div class="lead">
-                        <p>CSS unit used by the scale.</p>
-                      </div>
-                      <dl class="tsd-comment-tags">
-                        <dt>default</dt>
-                        <dd><p>&quot;px&quot;</p></dd>
-                      </dl>
-                    </div>
                   </li>
                 </ul>
               </div>
@@ -308,29 +202,34 @@
                 <li class="tsd-signature tsd-kind-icon">
                   size<wbr />Scale<span class="tsd-signature-symbol">(</span
                   >positions<span class="tsd-signature-symbol">: </span
-                  ><span class="tsd-signature-type">number</span>, options<span
+                  ><span class="tsd-signature-type">number</span>, step<span
                     class="tsd-signature-symbol"
-                    >: </span
-                  ><a
-                    href="modules.html#ScaleOptions"
-                    class="tsd-signature-type"
-                    data-tsd-kind="Type alias"
-                    >ScaleOptions</a
+                    >?: </span
+                  ><span class="tsd-signature-type">number</span>, unit<span
+                    class="tsd-signature-symbol"
+                    >?: </span
+                  ><span class="tsd-signature-type">string</span
                   ><span class="tsd-signature-symbol">)</span
                   ><span class="tsd-signature-symbol">: </span
-                  ><a
-                    href="modules.html#Scale"
-                    class="tsd-signature-type"
-                    data-tsd-kind="Type alias"
-                    >Scale</a
-                  >
+                  ><span class="tsd-signature-type">Record</span
+                  ><span class="tsd-signature-symbol">&lt;</span
+                  ><span class="tsd-signature-type">number</span
+                  ><span class="tsd-signature-symbol">, </span
+                  ><span class="tsd-signature-type">string</span
+                  ><span class="tsd-signature-symbol">&gt;</span>
                 </li>
               </ul>
               <ul class="tsd-descriptions">
                 <li class="tsd-description">
                   <aside class="tsd-sources">
                     <ul>
-                      <li>Defined in scale.ts:40</li>
+                      <li>
+                        Defined in
+                        <a
+                          href="https://github.com/tubbo/css-size-scale/blob/0b8cae9/src/scale.ts#L15"
+                          >scale.ts:15</a
+                        >
+                      </li>
                     </ul>
                   </aside>
                   <div class="tsd-comment tsd-typography">
@@ -356,29 +255,36 @@
                     </li>
                     <li>
                       <h5>
-                        options:
-                        <a
-                          href="modules.html#ScaleOptions"
-                          class="tsd-signature-type"
-                          data-tsd-kind="Type alias"
-                          >ScaleOptions</a
+                        step: <span class="tsd-signature-type">number</span
+                        ><span class="tsd-signature-symbol"> = 4</span>
+                      </h5>
+                      <div class="tsd-comment tsd-typography">
+                        <div class="lead">
+                          <p>How many units per interval</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <h5>
+                        unit: <span class="tsd-signature-type">string</span
+                        ><span class="tsd-signature-symbol">
+                          = &#39;px&#39;</span
                         >
                       </h5>
                       <div class="tsd-comment tsd-typography">
                         <div class="lead">
-                          <p>Additional options</p>
+                          <p>Unit of measurement</p>
                         </div>
                       </div>
                     </li>
                   </ul>
                   <h4 class="tsd-returns-title">
-                    Returns
-                    <a
-                      href="modules.html#Scale"
-                      class="tsd-signature-type"
-                      data-tsd-kind="Type alias"
-                      >Scale</a
-                    >
+                    Returns <span class="tsd-signature-type">Record</span
+                    ><span class="tsd-signature-symbol">&lt;</span
+                    ><span class="tsd-signature-type">number</span
+                    ><span class="tsd-signature-symbol">, </span
+                    ><span class="tsd-signature-type">string</span
+                    ><span class="tsd-signature-symbol">&gt;</span>
                   </h4>
                 </li>
               </ul>
@@ -395,11 +301,6 @@
             <ul>
               <li class="tsd-kind-type-alias">
                 <a href="modules.html#Scale" class="tsd-kind-icon">Scale</a>
-              </li>
-              <li class="tsd-kind-type-alias">
-                <a href="modules.html#ScaleOptions" class="tsd-kind-icon"
-                  >Scale<wbr />Options</a
-                >
               </li>
               <li class="tsd-kind-function">
                 <a href="modules.html#sizeScale" class="tsd-kind-icon"

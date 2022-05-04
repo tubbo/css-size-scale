@@ -100,10 +100,42 @@
             <pre><code class="language-typescript"><span class="hl-1">{</span><br/><span class="hl-1">  </span><span class="hl-5">0</span><span class="hl-1">: </span><span class="hl-3">&#39;0px&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-5">1</span><span class="hl-1">: </span><span class="hl-3">&#39;4px&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-5">2</span><span class="hl-1">: </span><span class="hl-3">&#39;8px&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-5">3</span><span class="hl-1">: </span><span class="hl-3">&#39;16px&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-5">4</span><span class="hl-1">: </span><span class="hl-3">&#39;20px&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-5">5</span><span class="hl-1">: </span><span class="hl-3">&#39;24px&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-5">6</span><span class="hl-1">: </span><span class="hl-3">&#39;28px&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-5">7</span><span class="hl-1">: </span><span class="hl-3">&#39;32px&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">}</span>
 </code></pre>
             <p>
-              Full documentation available at
+              The <code>sizeScale()</code> function can be configured with
+              additional parameters to control the step interval and CSS unit.
+              For example, here&#39;s how you might create a font size scale
+              using these additional parameters:
+            </p>
+            <pre><code class="language-typescript"><span class="hl-4">sizeScale</span><span class="hl-1">(</span><span class="hl-5">8</span><span class="hl-1">, </span><span class="hl-5">0.3</span><span class="hl-1">, </span><span class="hl-3">&#39;em&#39;</span><span class="hl-1">)</span>
+</code></pre>
+            <p>This would return:</p>
+            <pre><code><span class="hl-1">{</span><br/><span class="hl-1">  </span><span class="hl-5">0</span><span class="hl-1">: </span><span class="hl-3">&#39;0em&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-5">1</span><span class="hl-1">: </span><span class="hl-3">&#39;0.3em&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-5">2</span><span class="hl-1">: </span><span class="hl-3">&#39;0.6em&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-5">3</span><span class="hl-1">: </span><span class="hl-3">&#39;0.9em&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-5">4</span><span class="hl-1">: </span><span class="hl-3">&#39;1.2em&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-5">5</span><span class="hl-1">: </span><span class="hl-3">&#39;1.5em&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-5">6</span><span class="hl-1">: </span><span class="hl-3">&#39;1.8em&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-5">7</span><span class="hl-1">: </span><span class="hl-3">&#39;2.1em&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">}</span>
+</code></pre>
+            <p>
+              Full API documentation available at
               <a href="https://tubbo.github.io/css-size-scale"
                 >https://tubbo.github.io/css-size-scale</a
               >
+            </p>
+
+            <a
+              href="#development"
+              id="development"
+              style="color: inherit; text-decoration: none"
+            >
+              <h2>Development</h2>
+            </a>
+            <p>
+              This project uses Yarn
+              <a href="https://yarnpkg.com/features/zero-installs"
+                >Zero-Installs</a
+              >
+              and thus requires the Yarn package manager in order to function.
+              The Git repository contains all cache entries, so there&#39;s no
+              need to run <code>yarn install</code> when you clone it. In
+              addition, automatic formatting and commit message linting occurs
+              when you commit new changes to the repository. Tests and type
+              checks are run in CI, so you should make sure to run
+              <code>yarn test</code> before making any pull requests.
             </p>
           </div>
         </div>
@@ -117,11 +149,6 @@
             <ul>
               <li class="tsd-kind-type-alias">
                 <a href="modules.html#Scale" class="tsd-kind-icon">Scale</a>
-              </li>
-              <li class="tsd-kind-type-alias">
-                <a href="modules.html#ScaleOptions" class="tsd-kind-icon"
-                  >Scale<wbr />Options</a
-                >
               </li>
               <li class="tsd-kind-function">
                 <a href="modules.html#sizeScale" class="tsd-kind-icon"
