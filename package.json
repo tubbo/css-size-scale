@@ -20,7 +20,7 @@
     "fmt": "prettier --write . && eslint --fix .",
     "release": "semantic-release",
     "clean": "rm -rf dist coverage",
-    "docs": "typedoc src/index.ts"
+    "docs": "typedoc src/scale.ts"
   },
   "eslintConfig": {
     "plugins": [
